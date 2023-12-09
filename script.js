@@ -8,7 +8,6 @@ btnNavE1.addEventListener("click", function () {
   headerE1.classList.toggle("nav-open");
 });
 
-// Smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -16,22 +15,28 @@ allLinks.forEach(function (link) {
     e.preventDefault();
     const href = link.getAttribute("href");
 
-    // Scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    if (href.startsWith("#")) {
+      // Scroll back to top or to an external website
+      if (href === "#") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        const selectionE1 = document.querySelector(href);
+        if (selectionE1) {
+          selectionE1.scrollIntoView({ behavior: "smooth" });
+        }
+      }
 
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const selectionE1 = document.querySelector(href);
-      selectionE1.scrollIntoView({ behavior: "smooth" });
+      // Close navigation for internal links
+      if (link.classList.contains("main-nav-link")) {
+        headerE1.classList.toggle("nav-open");
+      }
+    } else if (href.startsWith("http://") || href.startsWith("https://")) {
+      // Navigate to an external website
+      window.open(href, '_blank');
     }
-
-    // Close navigation
-    if (link.classList.contains("main-nav-link"))
-      headerE1.classList.toggle("nav-open");
   });
 });
 
