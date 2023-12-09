@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Sweden</title>
+    <link href= 'https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+    <link href= 'https://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' />  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <h1 id="name">Explore Sweden</h1>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#places">Places</a></li>
+          <li><a class="main-nav-link" href="#people">People</a></li>
+          <li>
+            <a class="main-nav-link" href="#more">More</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
+    </header>
+    <main>
+        <!--Place starts-->
+      <section id="places">
+       <a href="#"><h2 class="title">Wonderful places</h2></a>
+        <div class="slide-container">
+
+          <div class="slides fade">
+            <div class="number-text">1 / 4</div>
+            <img src="./img/slideimages/Gamla stan.jpg" class="slide-picture">
+            <div class="text">Gamla Stan</div>
+          </div>
+          
+          <div class="slides fade">
+            <div class="number-text">2 / 4</div>
+            <img src="./img/slideimages/Ales stenar.jpg" class="slide-picture">
+            <div class="text">Ales stenar</div>
+          </div>
+          
+          <div class="slides fade">
+            <div class="number-text">3 / 4</div>
+            <img src="./img/slideimages/Marstrand.jpg" class="slide-picture">
+            <div class="text">Marstrand</div>
+          </div>
+          
+          <div class="slides fade">
+            <div class="number-text">4 / 4</div>
+            <img src="./img/slideimages/The IceHotel in Jukkäsjarvi.jpg" class="slide-picture">
+            <div class="text">The IceHotel in Jukkäsjarvi</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
+      </section>
+      <!-- People starts -->
+      <section id="people">
+      <a href="#"><h2>Great people</h2></a>
+        <div id="great-people">
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Alfred Nobel.jpg"/>
+          </div>
+          <p class="people-name">Alfred Nobel</p>
+          <p class="people-life">(1833 – 1896)</p>
+          <article class="people-description">
+            Alfred Bernhard Nobel was a Swedish chemist, engineer, inventor, businessman, and philanthropist. He is known for inventing dynamite as well as having bequeathed his fortune to establish the Nobel Prize. He also made several important contributions to science, holding 355 patents in his lifetime.
+          </article>
+         </div>
+
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Astrid Lindgren.jpg"/>
+          </div>
+          <p class="people-name">Astrid Lindgren</p>
+          <p class="people-life">(1907 – 2002)</p>
+          <article class="people-description">
+            Astrid Anna Emilia Lindgren was a Swedish writer of fiction and screenplays. She is best known for several children's book series, featuring Pippi Longstocking, Emil of Lönneberga, Karlsson-on-the-Roof, etc. In 2017, she was calculated to be the world's 18th most translated author.
+          </article>
+         </div>
+
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Nils Bohlin.jpg"/>
+          </div>
+          <p class="people-name">Nils Bohlin</p>
+          <p class="people-life">(1920 – 2002)</p>
+          <article class="people-description">
+            Nils Ivar Bohlin  was a Swedish mechanical engineer and inventor who invented the three-point safety belt while working at Volvo. The three-point seat belt changed the world by preventing injuries during a car crash. The US National Highway Traffic Safety Administration says that the seat belt saves about 15,000 lives per year in the US.
+          </article>
+         </div>
+
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Carl Larsson.jpg"/>
+          </div>
+          <p class="people-name">Carl Larsson</p>
+          <p class="people-life">(1853 – 1919))</p>
+          <article class="people-description">
+            Carl Olof Larsson was a Swedish painter representative of the Arts and Crafts movement. His many paintings include oils, watercolors, and frescoes. He is principally known for his watercolors of idyllic family life. He considered his finest work to be Midvinterblota, now displayed inside the Swedish National Museum of Fine Arts.
+          </article>
+         </div>
+
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Ingvar Kamprad.jpg"/>
+          </div>
+          <p class="people-name">Ingvar Kamprad</p>
+          <p class="people-life">(1926 – 2018)</p>
+          <article class="people-description">
+            Feodor Ingvar Kamprad was a Swedish billionaire business magnate best known for founding IKEA, a multinational retail company specialising in furniture. The acronym IKEA is made up of the initials of his name plus those of Elmtaryd, the family farm where he was born, and the nearby village Agunnaryd where he was raised.
+          </article>
+         </div>
+
+         <div class="people-container">
+          <div class="img-container">
+            <img class="person-picture" src="./img/peopleimages/Greta Garbo.jpg"/>
+          </div>
+          <p class="people-name">Greta Garbo</p>
+          <p class="people-life">(1905 – 1990) </p>
+          <article class="people-description">
+            Greta Garbo was a Swedish-American actress. She was known for her melancholic, somber persona, her film portrayals of tragic characters, and her subtle and understated performances. In 1999, the American Film Institute ranked Garbo fifth on its list of the greatest female stars of classic Hollywood cinema.
+          </article>
+        </div>
+       </div>
+      </section>
+    <!-- More starts -->
+      <section id="more">
+        <a href="#"><h2>More</h2></a>
+        <iframe id="move-video" width="560" height="315" src="https://www.youtube.com/embed/D-hP-YoADuo?si=lAdWaqkbHzNqcZSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div id="more-details">
+          <h3 id="more-title">If you like numbers, here are a few…</h3>
+          <ul id="more-lists">
+            <li class="more-li">
+              55% of all Swedish citizens own a pet;
+            </li>
+            <li class="more-li">
+              86% find that alcohol and socialising are intertwined;
+            </li>
+            <li class="more-li">
+              25% are born in or have both parents coming from a different country;
+            </li>
+            <li class="more-li">
+              82% drink coffee daily and in average 3.2 cups per day.
+            </li>
+          </ul>
+          <p id="more-statistics"><i>More statistics and fun facts about Sweden, <a href="https://hejsweden.com/en/basic-sweden-facts-and-fun-facts/" alt="Facts about Sweden" target="_blank"><b>here</b></a>.</i></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; Copyright 2023 Built by Meiying</p>
+      </div>
+    </footer>
+   
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
