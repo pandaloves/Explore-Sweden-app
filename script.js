@@ -41,33 +41,36 @@ allLinks.forEach(function (link) {
 });
 
 // Slide show
-function slideshow(n) {
+let slideIndex = 1;
+slideShow(slideIndex);
+
+function slideShow(n) {
   const slides = document.querySelectorAll(".slides");
   const dots = document.querySelectorAll(".dot");
+
   if (n > slides.length) {
     slideIndex = 1;
   }    
   if (n < 1) {
     slideIndex = slides.length;
   }
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
+
   for (let i = 0; i < dots.length; i++) {
     dots[i].classList.remove("active");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].classList.add(" active");
+
+  slides[slideIndex - 1].style.display = "block";  
+  dots[slideIndex - 1].classList.add("active");
 }
 
-let slideIndex = 1;
-slideshow(slideIndex);
-
 function plusSlides(n) {
-  slideshow(slideIndex += n);
+  slideShow(slideIndex += n);
 }
 
 function currentSlide(n) {
-  slideshow(slideIndex = n);
+  slideShow(slideIndex = n);
 }
-
