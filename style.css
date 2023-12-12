@@ -5,16 +5,16 @@
     --font-family-three: serif;
     --font-size-one: 1rem;
     --font-size-two: 30px;
-    --font-size-two: 20px;
+    --font-size-two: 25px;
     --background-color-one: rgb(6, 79, 174);
     --background-color-two: rgb(14, 92, 227);
     --color-one: rgb(252, 223, 5);
     --color-two: rgb(235, 235, 11);
     --transition: all 0.3s;
 }
-html {
-    margin: 0;
-    padding: 0; 
+body {
+  margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
@@ -34,12 +34,6 @@ a:hover {
 a:visited {
   color:rgb(4, 67, 150);
 }
-h2 {
-  font-family: var(--font-family-two);
-  font-size: var(--font-size-two);
-  font-weight: 500;
-  color: rgb(26, 24, 24);
-}
 /* Different parts */
 /* Header */
 .header {
@@ -51,7 +45,7 @@ h2 {
   background-color: var(--background-color-one);
   height: 8rem;
   padding: 0 4rem;
-  position: relative;
+  position: sticky;
   z-index: 999;
   box-shadow: 0 1.15rem 3.1rem rgba(0, 0, 0, 0.03);
 }
@@ -102,7 +96,6 @@ nav a {
 }
 /* Main starts */
 main {
-  margin: 0.5rem auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2px;
@@ -112,11 +105,14 @@ main {
   grid-column: 1 / 13;
 }
 .title {
+  margin: 3rem 2rem 3.35rem;
   font-family: var(--font-family-one);
   font-size: var(--font-size-two);
+  font-weight: 600;
+  color: rgb(26, 24, 24);
 }
 .slides {
-  display: none
+  display: none;
 }
 img {
   vertical-align: middle;
@@ -129,7 +125,7 @@ img {
 }
 .slide-picture {
   width: 100%;
-  height: 458px;
+  height: 428px;
   border-radius: 28px;
 }
 /* The next and previous buttons */
@@ -174,6 +170,9 @@ img {
   top: 0;
 }
 /* The dots */
+#dot-container {
+  margin: 0 auto;
+}
 .dot {
   cursor: pointer;
   height: 13.8px;
@@ -221,7 +220,6 @@ img {
   border: 1px solid var(--color-one);
   box-shadow: 1px 2px 2px var(--background-color-two);
   border-radius: 10px;
-  z-index: 999;
 }
 .people-container:hover {
   transform: translateY(-10px);
@@ -272,6 +270,7 @@ img {
   grid-column: 1 / 2;
 }
 .video-container {
+  margin: auto 0.5rem;
   grid-column: 1 / 2;
   position: relative;
   padding-bottom: 56.25%;
@@ -306,6 +305,7 @@ img {
 }
 /* Footer starts */
 footer {
+    margin: 2rem auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
