@@ -48,6 +48,7 @@ a:visited {
   position: fixed;
   width: 100%;
   box-shadow: 0 1.15rem 3.1rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
 }
 #name {
   font-family: var(--font-family-two);
