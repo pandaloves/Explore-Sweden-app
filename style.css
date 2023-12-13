@@ -347,7 +347,7 @@ footer {
   /* Hamburger menu */
   .btn-mobile-nav {
     display: block;
-    margin: auto 5px;
+    margin: auto 3px;
     z-index: 999;
   }
   .main-nav {
