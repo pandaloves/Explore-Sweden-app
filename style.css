@@ -47,7 +47,6 @@ a:visited {
   padding: 0 4rem;
   position: fixed;
   width: 100%;
-  z-index: 999;
   box-shadow: 0 1.15rem 3.1rem rgba(0, 0, 0, 0.03);
 }
 #name {
@@ -97,6 +96,7 @@ nav a {
 }
 /* Main starts */
 main {
+  padding-top: 90px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2px;
